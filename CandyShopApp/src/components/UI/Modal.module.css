@@ -20,6 +20,10 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 30;
     animation: slide-down 300ms ease-out forwards;
+     background-image: url(/src/assets/Canddy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
   }
   
   @media (min-width: 768px) {
@@ -28,6 +32,7 @@
       left: calc(50% - 20rem);
     }
   }
+  
   
   @keyframes slide-down {
     from {
@@ -39,3 +44,4 @@
       transform: translateY(0);
     }
   }
+  
