@@ -1,7 +1,10 @@
 import React from 'react';
 import ProductItem from './ProductItem';
+import './AvailableProducts.css';
 
-const productsArr = [
+export const productsArr =
+ 
+[
 
     {
     
@@ -38,7 +41,7 @@ const productsArr = [
     imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
     
     },
-    
+   
     {
     
     title: 'Blue Color',
@@ -56,14 +59,13 @@ const productsArr = [
     
 export default function AvailablePoduct() {
 
-    const products = productsArr.map(items => { return <ProductItem key = {items.id} title = {items.title} price = {items.price} imageUrl = {items.imageUrl}/>})
+    const products = productsArr.map(items => { return <ProductItem id = {items.id} key = {items.id} title = {items.title} price = {items.price} imageUrl = {items.imageUrl}/>})
     
   return (
-    <div>
-        <div>
-            {products}
-            
-        </div>
-    </div>
+     <div className='store'>
+      <div className='container'>
+        {products}
+      </div>
+     </div>
   )
 }

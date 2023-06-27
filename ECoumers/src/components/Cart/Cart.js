@@ -1,58 +1,52 @@
-import React from 'react'
+import React from 'react';
+import CartContext from '../../context/CartContext';
+import { useContext } from 'react';
+import CartItem from './CartItem';
+import { Container,Row,Col,Table } from 'react-bootstrap';
 
 const Cart = () => {
-  const cartElements =<ul> {[
-
-    {
-    
-    title: 'Colors',
-    
-    price: 100,
-    
-    imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png',
-    
-    quantity: 2,
-    
-    },
-    
-    {
-    
-    title: 'Black and white Colors',
-    
-    price: 50,
-    
-    imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%202.png',
-    
-    quantity: 3,
-    
-    },
-    
-    {
-    
-    title: 'Yellow and Black Colors',
-    
-    price: 70,
-    
-    imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
-    
-    quantity: 1,
-    
-    }
-    
-    ].map((item) => 
-    <li>{item.title}</li>
-    )}</ul>;
+  const cartCtx = useContext(CartContext);
+  const cartItem = cartCtx.items.map((item) =>{
+     return(
+      <CartItem
+      key = {item.id} 
+      id = {item.id}
+      title = {item.title}
+      price = {item.price}
+      image = {item.imageUrl}
+      Quantity = {item.Quantity}
+      />
+     )
+  })
+  
   return (
-    <div>
-      {cartElements}
-      <div>
-        <span>Total amount</span>
-        <span>1000</span>
-    </div>
-    <div>
-      <button>Purhase</button>
-    </div>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+         Cart
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Table>
+          <thead>
+            <tr>
+              <th>
+                Item
+              </th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cartItem}
+          </tbody>
+        </Table>
+        </Col>
+      </Row>
+     {cartItem}
+     </Container>
+    
   );
 }
 
