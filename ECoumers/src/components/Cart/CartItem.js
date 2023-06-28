@@ -1,6 +1,7 @@
 import React,{useRef,useContext} from 'react';
 import { Button } from 'react-bootstrap';
 import CartContext from '../../context/CartContext';
+import './CartItem.css';
 
 const CartItem = (props) => {
     let placeholder = 0;
@@ -14,11 +15,12 @@ const CartItem = (props) => {
     }
   
   return (
+
  
     <tr>
         <td>
-         <span>
-            <img src={props.image}/>
+         <span className='cartItem'>
+            <img src={props.image} className='cartItemImg'/>
          </span>
          <span>{props.title}</span>
         </td>
@@ -28,7 +30,7 @@ const CartItem = (props) => {
         <td>
             <div>
                 <span>
-                    <input type='text' min = {1} ref={Quantity} placeholder ={placeholder}/>
+                    <input type='text' min = {1} ref={Quantity} placeholder ={placeholder} size = "2"/>
                 </span>
                 <span>
                     <Button onClick={() => removeHandeler(props.id)}>Remove</Button>

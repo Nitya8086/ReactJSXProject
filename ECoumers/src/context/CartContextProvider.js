@@ -83,7 +83,7 @@ const CartContextProvider = (props) => {
     };
 
     const removeCartHandeler = (id) =>{
-      console.log("dispach",id);
+     
         dispatchCartItemaction({type : 'REM', id : id})
 
     };

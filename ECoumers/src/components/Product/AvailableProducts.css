@@ -1,12 +1,12 @@
 .store{
     display: flex;
-    justify-content: center;
+   
     border: 1px solid black;
 
 }
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     padding: 20px;
     margin: 1rem;

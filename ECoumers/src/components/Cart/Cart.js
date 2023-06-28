@@ -44,7 +44,6 @@ const Cart = () => {
         </Table>
         </Col>
       </Row>
-     {cartItem}
      </Container>
     
   );
