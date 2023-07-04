@@ -1,0 +1,28 @@
+.header {
+    background-color: rgb(24, 231, 197);
+    color: black;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 12px;
+    justify-content: space-evenly;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    overflow: hidden;
+    padding: 20px 10px;
+    margin-top: border-box;
+  }
+  header lin {
+    color: black;
+  }
+  
