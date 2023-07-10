@@ -2,10 +2,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Home.css';
 
-export const toastify = (e) =>{
-  toast.success(e)
-  console.log("toastyfy call hua");
-}
+
 const Home = () => {
 
   return (
