@@ -26,6 +26,9 @@ const  Header = ()  => {
             <Link to='/about'>About</Link>
             </Navbar.Brand>
             <Navbar.Brand className = "m-auto">
+            <Link to='/contactUs'>ContactUs</Link>
+            </Navbar.Brand>
+            <Navbar.Brand className = "m-auto">
             <Link to='/store'>Store</Link>
             </Navbar.Brand>
            

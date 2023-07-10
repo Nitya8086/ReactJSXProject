@@ -30,13 +30,16 @@ const CartItem = (props) => {
         <td>
             <div>
                 <span>
-                    <input type='text' min = {1} ref={Quantity} placeholder ={placeholder} size = "2"/>
+                <input type='text' min = {1} ref={Quantity} placeholder ={placeholder} size = "2"/>
                 </span>
-                <span>
+               
+               
+            </div>
+           
+        </td>
+        <span style={{display :'flex',justifyContent : 'center',alignItems :'center'}}>
                     <Button onClick={() => removeHandeler(props.id)}>Remove</Button>
                 </span>
-            </div>
-        </td>
     </tr>
   )
 }

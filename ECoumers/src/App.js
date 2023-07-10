@@ -4,6 +4,7 @@ import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
 import Store from "./components/Pages/Store";
 import Layout from "./components/Layout/Layout";
+import ContactUs from "./components/Pages/ContactUs";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path = '/about'>
             <About/>
+          </Route>
+          <Route path = '/contactUs'>
+            <ContactUs/>
           </Route>
         </Switch>
        </Layout>

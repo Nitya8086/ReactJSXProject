@@ -1,28 +1,27 @@
 import React from 'react'
 import './Footer.css';
+import {BsFacebook,BsSpotify,BsYoutube} from 'react-icons/bs';
 const Footer = () => {
   return (
    
-    <footer>
+    <footer className='footer'>
     <div className='footer-title'>The Generics</div>
     <div className='footer-icons'>
-      <ul>
-        <li>
+      <span>
         <a href="https://www.youtube.com">
-                    <img src="/img/6260efc8fc9a9002669d2f4ad9956cc0.jpg" alt=""/>
-                </a>
-        </li>
-        <li>
+                 <BsYoutube/> 
+                 </a> 
+                 </span>
+        <span>
         <a href="https://spotify.com">
-                    <img src="/img/Spotify Logo.png" alt=""/>
+                   <BsSpotify/>
                 </a>
-        </li>
-        <li>
+                </span>
+       <span>
         <a href="https://facebook.com">
-                    <img src="/img/Facebook Logo.png" alt=""/>
+                <BsFacebook/>
                 </a>
-        </li>
-      </ul>
+                </span>
     </div>
     </footer>
 

@@ -2,7 +2,7 @@
 box-sizing: border-box;
 margin: 0;
 }
-img{
+.image{
     float: left;
     margin: 20px 50px;
     border-radius: 50%;
@@ -42,4 +42,8 @@ section h2 {
     text-align: center;
     padding: 20px;
     font-size: 30px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
 }

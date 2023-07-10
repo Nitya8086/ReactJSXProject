@@ -2,7 +2,7 @@ import React from 'react';
 import CartContext from '../../context/CartContext';
 import { useContext } from 'react';
 import CartItem from './CartItem';
-import { Container,Row,Col,Table } from 'react-bootstrap';
+import { Container,Row,Col,Table,Button } from 'react-bootstrap';
 
 const Cart = () => {
   const cartCtx = useContext(CartContext);
@@ -44,6 +44,7 @@ const Cart = () => {
         </Table>
         </Col>
       </Row>
+     <Button variant='success'>Submit</Button>
      </Container>
     
   );
